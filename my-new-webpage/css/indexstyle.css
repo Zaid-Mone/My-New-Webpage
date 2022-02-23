@@ -1,0 +1,250 @@
+/* Core Styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  p {
+    margin: 0;
+    padding: 1em 0;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+  }
+  
+  .btn:hover {
+    background: #eaeaea;
+    color: #333;
+  }
+  
+  /* Header Showcase */
+  
+  #showcase {
+    min-height: 450px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #showcase .bg-image {
+    position: absolute;
+    background: #333
+      url("https://wallpaperaccess.com/full/417693.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.4;
+  }
+  
+  #showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+  
+  #showcase .content-wrap,
+  #section-a .content-wrap {
+    padding: 0 1.5em;
+  }
+  
+  /* Section A */
+  
+  #section-a {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+  }
+  
+  /* Section B */
+  
+  #section-b {
+    padding: 2em 1em 1em;
+  }
+  
+  #section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #section-b ul .card img{
+    
+    height: 200px;
+  }
+  
+  #section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    transition: 1s ease;
+    box-shadow: 4px 4px 4px 7px#111;
+  }
+  #section-b li:hover{
+      transform: scale(1.1);
+  }
+  
+  .card-content {
+    padding: 1.5em;
+  }
+  
+  /* Section C */
+  
+  #section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+  }
+  
+  /* Section D / Boxes */
+  
+  #section-d .box {
+    padding: 2em;
+    color: #fff;
+  }
+  
+  #section-d .box:first-child {
+    background: #2690d4;
+  }
+  
+  /* Footer */
+  
+  #main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+  }
+  
+  /* Media Queries */
+  
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+  
+    #section-a .content-text {
+      columns: 1;
+      column-gap: 2em;
+    }
+  
+    #section-a .content-text p {
+      padding-top: 0;
+    }
+  
+    .content-wrap,
+    #section-b ul {
+      grid-column: 1/5; /* was 2/4 */
+    }
+  
+    .box,
+    #main-footer div {
+      grid-column: span 2;
+    }
+  
+    #section-b ul {
+      display: flex;
+      justify-content: space-between;
+      padding-right: 5px;
+    }
+  
+    #section-b li {
+      width: 31%;
+    }
+  }
+
+  .copy-rights{
+      text-transform: uppercase;
+      font-size: 1.1em;
+      border-bottom:  1px solid tomato  ;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .see-more{
+      padding: 6px 0;
+      width:150px;
+      cursor: pointer;
+      border-radius: 25px;
+      background-color: #65a8d1;
+      font-weight: 600;
+      border: 1px solid #65a8d1;
+      transition: 1s ease;
+  }
+  .see-more:hover{
+      background-color: #666;
+      transform: scale(1.1);
+      font-size: 0.8em;
+  }
+.social i{
+    color:tomato; 
+    font-size:24px;
+    padding-left: 15px;
+    transition: 1s ease-in-out;
+}
+.social i:hover{
+    transform: scale(1.1);
+    color: gold;
+}
+.marq{
+  font-size: 1.2em;
+  border: 2px solid tomato;
+  border-radius: 999px;background: linear-gradient(90deg,#6b92aa,#7c716c,#6b92aa);
+  font-weight: 600;
+ 
+}
